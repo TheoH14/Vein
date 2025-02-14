@@ -1,0 +1,162 @@
+*
+{
+    background: #000000;
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+body
+{
+    height: 100vh;
+    padding-top: 18%;
+    user-select: none;
+}
+
+.Logo
+{
+    display: flex;
+    justify-content: center;
+}
+
+.Logo_v
+{
+    background-image: url(./Image/Logo\ Vein\ white.svg);
+    background-size: contain;
+    width: 120px;
+    height: 120px;
+}
+
+.Coord
+{
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+}
+
+.Coord .Info form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Coord .Info form input
+{
+    border: solid 0.5px;
+    height: 40px;
+    width: 300px;
+    padding-left: 30px;
+    font-size: 20px;
+}
+
+
+.Coord .Info form button
+{
+    background: #ffffff;
+    color: #000000;
+    height: 40px;
+    width: 300px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.Coord .Info form button:hover {
+
+background: rgb(197, 197, 197) !important;
+}
+
+.inscription {
+
+    margin-top: 10px;
+}
+
+.inscription a {
+
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    background: #ffffff;
+    text-align: center;
+    height: 40px;
+    width: 300px;
+    padding-top: 7px;
+    font-family: Arial, sans-serif;
+    border: solid 0.5px;
+    font-size: 20px;
+}
+
+.inscription a:hover {
+
+    background: rgb(197, 197, 197) !important;
+}
+
+
+.Coord .Info form .email
+{
+    position: relative;
+    width: 300px;
+}
+
+.Coord .Info form .email input
+{
+    padding-left: 40px;
+}
+
+.Coord .Info form .email img
+{
+    position: absolute;
+    top: 50%;
+    left: 9px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+
+.Coord .Info form .password
+{
+    position: relative;
+    width: 300px;
+}
+
+.Coord .Info form .password input
+{
+    padding-left: 40px;
+}
+
+.Coord .Info form .password img
+{
+    position: absolute;
+    top: 50%;
+    left: 9px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+
+.PositionForgot
+{
+    width: 118px;
+    margin-left: 182px;
+    margin-top: 10px;
+}
+
+.Forgot
+{
+    font-size: 15px;
+    width: 118px;
+}
+
+.Forgot:hover
+{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.Forgot:active
+{
+    user-select: none;
+    transform: scale(0.97);
+}

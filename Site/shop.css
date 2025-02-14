@@ -1,0 +1,141 @@
+* {
+    margin-left: 0%;
+    margin-top: 0%;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 20vw;
+    gap: 20px;
+    list-style: none;
+}
+
+header {
+    background-color: black;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    margin-left: 10vw;
+}
+
+.search_box{
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: black;
+    margin-left: 20vw;
+    color: white;
+    padding-left: 10px;
+}
+
+.search_box::placeholder {
+    color: white;
+}
+
+body{
+    background-color: #010101;
+    color: white;
+}
+
+.titre{
+    margin-left: 2vh;
+}
+
+.page{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.text{
+    width: 45vw;
+}
+
+button{
+    border-color: white;
+}
+
+.info{
+        background-color: transparent;
+        border: 2px white solid;
+        color: white;
+}
+
+.card .bouton
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.Card-detail{
+    background-color: transparent;
+    width: 20vw;
+    border-color: white;
+    padding:2vw;
+    border: 2px white solid;
+}
+
+.Card-detail button{
+    background-color: transparent;
+}
+
+.card-button{
+    width: 5vh;
+    display: inline-block;
+}
+
+.card-detail{
+    display: flex
+
+}
+.card-detail > div{
+    display: flex;
+    flex-direction: column;
+}
+.card-details input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ffffff;
+    background: #222;
+    color: #fff;
+}
+
+.card-details .small-input {
+    width: calc(48% - 10px);
+    display: inline-block;
+}
+
+.card-details .total {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.card-details .total label{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.Checkout{
+    display: flex;
+    position: relative;
+    background-color: transparent;
+    width: 80%;
+    border-color: white;
+    padding:2vw;
+    border: 2px white solid;
+    justify-content: space-between;
+}
