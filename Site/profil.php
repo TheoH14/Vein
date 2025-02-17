@@ -34,16 +34,16 @@
 </head>
 <body>
 
-    <header>
+<header>
         <div>
             <a href="#">  <img src="https://via.placeholder.com/150" alt="Logo Site" title="Cliquer ici pour être rediriger vers la page d'accueil"></a>
         </div>
         <nav>
             <ul>
                 <li><a href="#">VEIN</a><i class="fa-solid fa-chevron-down"></i></li>
-                <li><a href="#">Shop</a><i class="fa-solid fa-chevron-down"></i></li>
-                <li><a href="#">Contacts</a></li>
-                <li><a href="#">Carte cadeaux</a></li>
+                <li><a href="#" title="Cliquer ici pour voir la page Shop">Shop</a><i class="fa-solid fa-chevron-down"></i></li>
+                <li><a href="#" title="Cliquer ici pour voir la page Contact">Contacts</a></li>
+                <li><a href="#" title="Cliquer ici pour voir la page">Carte cadeaux</a></li>
             </ul>
         </nav>
         <form id="searchForm" action="" method="post">
@@ -53,10 +53,14 @@
             </div>
         </form>
         <div class="profil">
-            <i class="fa-regular fa-user"></i>
+            <a href="#" title="Cliquer ici pour voir la page Profil">            
+                <i class="fa-regular fa-user"></i>
+            </a>
         </div>
         <div class="panier">
-            <i class="fa-solid fa-bag-shopping"></i>
+            <a href="#" title="Cliquer ici pour voir la page Panier">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a>
         </div>
     </header>
 
@@ -64,19 +68,22 @@
         <form action="" method="post" class="form-profil">
             <div>
                 <div class="user-info">
-                    <div>
-                        <img src="" alt="Photo de profil" title="Voir la photo de profil">
-                    </div>
-                    <div>
-                        <span id="userFirstname" name="userFirstname"></span>
-                        <span id="userLastname" name="userLastname"></span>
-                        <span id="userGender" name="userGender"></span>
+                    <div class="user-profil">
+                        <div>
+                            <img src="" alt="Photo de profil" title="Voir la photo de profil">
+                        </div>
+                        <div class="user-span">
+                            <span id="userFirstname" name="userFirstname"></span>
+                            <span id="userLastname" name="userLastname"></span>
+                            <span id="userGender" name="userGender"></span>
+                            <span id="userCountry" name="userCountry"></span>
+                        </div> 
                     </div>
                     <div class="modify">
-                        <button type="button" id="modifyProfil">EDIT</button>
+                        <button type="button" id="modifyProfil" title="Cliquer 1 fois pour désactiver les champs, cliquer 2 fois pour réactiver les champs">EDIT</button>
                     </div>
                     <div class="logout">
-                        <button type="submit" id="logoutBtn" name="Deconnexion">Déconnexion</button>
+                        <button type="submit" id="logoutBtn" name="Deconnexion" title="Cliquer ici pour vous déconnecter">Déconnexion</button>
                     </div>
                 </div>
             </div>
@@ -98,6 +105,22 @@
                         <option value="Femme" name="Femme">Femme</option>
                     </select>
                 </div>
+                <div class="user-country">
+                    <label for="country">Pays</label>
+                    <select name="country" id="country">
+                        <option value=""> --Choisissez votre pays</option>
+                        <option value="France" name="France">France</option>
+                        <option value="Belgique" name="Belgique">Belgique</option>
+                        <option value="Angleterre" name="Angleterre">Angleterre</option>
+                        <option value="Espagne" name="Espagne">Espagne</option>
+                        <option value="Italie" name="Italie">Italie</option>
+                        <option value="Portugal" name="Portugal">Portugal</option>
+                        <option value="Allemagne" name="Allemagne">Allemagne</option>
+                        <option value="Pays-Bas" name="Pays-Bas">Pays-Bas</option>
+                        <option value="Luxembourg" name="Luxembourg">Luxembourg</option>
+                        <option value="Suisse" name="Suisse">Suisse</option>
+                    </select>
+                </div>
             </div>
     
             <div class="add-email">
@@ -113,7 +136,7 @@
                     <i class="fa-solid fa-envelope"></i> <span id="userEmail" name="userEmail"></span>
                 </div>
             </div>
-        </form>
+        </form>  
     </main>
 
 
